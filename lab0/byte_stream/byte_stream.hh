@@ -15,13 +15,12 @@ class ByteStream {
     
     std::vector<char> _buffer;
     size_t _capacity;
-    // begin_idx == end_idx表示空
+    // begin_idx == end_idx???
     size_t _begin_idx;
-    // end_idx 下标表示下次可以开始写的位置
+    // end_idx ??????????????
     size_t _end_idx;
     size_t _written_cnt;
     size_t _read_cnt;
-    size_t _size;
     // Hint: This doesn't need to be a sophisticated data structure at
     // all, but if any of your tests are taking longer than a second,
     // that's a sign that you probably want to keep exploring
@@ -81,7 +80,8 @@ class ByteStream {
     bool eof() const;
     //!@}
 
-    //! \name General accounting
+    //! \name Gener
+al accounting
     //!@{
 
     //! Total number of bytes written
